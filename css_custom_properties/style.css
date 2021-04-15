@@ -1,0 +1,68 @@
+/* define variables for root element. we can use the variables of root throughout all the scope of CSS */
+:root{
+    --main-bg-color: #f4f4f4f4;
+    --main-txt-color: #333;
+    --container-width: 90%;
+    --header-bg-color: #333;
+    --header-txt-color: #fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: consolas;
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+.container{
+    width: var(--container-width);
+    margin: 20px auto;
+}
+#main-header{
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+}
+#main-header h1{
+    padding: 5px;
+    margin: 10px;
+}
+
+.grid{
+    --gap:20;
+    /* we can also define variables here */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: calc(var(--gap) * 1px);
+    align-items: center;
+}
+
+
+/* define box variables, these don't work outside the box class as well as elements within the class */
+.box{
+    --box-bg-color: #ddd;
+    --box-main-color: #06c;
+    --box-padding: 5px 10px;
+    --box-shadow-h-offset: 10px;
+    --box-shadow-v-offset: 5px;
+    --box-shadow-blur: 10px;
+}
+
+.box{
+    background-color: var(--box-bg-color);
+    padding: var(--box-padding);
+    border: 2px solid var(--box-main-color);
+    box-shadow:
+    var(--box-shadow-h-offset)
+    var(--box-shadow-v-offset)
+    var(--box-shadow-blur)
+    var(--box-main-color);
+}
+.box h1{
+    color: var(--box-main-color);
+}
+.box p{
+    /* --box-main-color: #555;
+    color: var(--box-main-color) */
+    color: var(--box-p-color, #0c6)
+}

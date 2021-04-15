@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="tab.css">
+    <title>Media Query</title>
+    <style>
+        .menu{
+            background-color: cadetblue;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .menu a{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+        .menu a:hover{
+            background-color: gray;
+        }
+        @media screen and (max-width: 600px){
+            .menu{
+                flex-direction: column;
+            }
+            .menu a{
+                background-color: indigo;
+                margin: 10px;
+                text-align: center;
+                border-radius: 5px;
+            }
+            .menu a:hover{
+            background-color:cyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#tutorial">Tutorial</a>
+        <a href="#about">About me</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <section id="home">
+        <h1>Home</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dolorem quibusdam soluta laboriosam aliquid at, molestiae id, ipsum adipisci, repellendus magnam minus saepe consequuntur natus accusantium fugiat ducimus nobis. Asperiores?</p>
+    </section>
+    <section id="tutorial">
+        <h1>Tutorial</h1>
+        <p>Ducimus, reprehenderit. Sequi assumenda dolorum odio, ut natus impedit sit officiis et perspiciatis illum laboriosam, magnam nisi. Consequatur harum quam laborum doloremque quo? Rem aperiam voluptatibus totam provident sequi nostrum.</p>
+    </section>
+    <section id="about">
+        <h1>About me</h1>
+        <p>Ea obcaecati at ex repudiandae, sapiente sint, officia dignissimos quasi impedit ab in doloremque placeat odit porro odio non deserunt fugit iusto nulla neque amet. Dolores quidem ea nobis earum.</p>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Reiciendis doloremque, vitae ipsa tenetur deleniti facere ratione sapiente doloribus rem, aspernatur eius. Perspiciatis exercitationem laborum commodi? Modi iure magnam commodi et. Neque, itaque porro qui beatae nihil velit in?</p>
+    </section>
+</body>
+</html>

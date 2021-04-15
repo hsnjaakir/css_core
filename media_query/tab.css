@@ -1,0 +1,14 @@
+/* Medium devices (landscape tablets, 768px and up) */
+.menu{
+    flex-direction:row;
+    justify-content: center;
+}
+.menu a{
+    background-color:brown;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.menu a:hover{
+background-color:cyan;
+}
